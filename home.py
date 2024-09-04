@@ -12,9 +12,10 @@ st.markdown(
     """
     <style>
     .stApp {
-        transform: scale(0.67);  /* Set the zoom to 67% */
-        transform-origin: center;  /* Keep the origin at the top left */
-        width: 150%;  /* Adjust width to compensate for zoom */
+        transform: scale(0.67);  /* Zoom out to 67% */
+        transform-origin: center;  /* Keep the origin in the center */
+        margin: 0 auto;  /* Center the app horizontally */
+        width: 150%;  /* Adjust width to fill the page */
     }
     body {
         overflow-x: hidden;  /* Prevent horizontal scrolling */
