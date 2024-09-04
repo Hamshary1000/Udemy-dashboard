@@ -1,6 +1,19 @@
 import streamlit as st
 # st.title('Hi there')
 
+st.markdown(
+    """
+    <style>
+    @media only screen and (max-width: 1024px) {
+        .stApp {
+            transform: scale(0.65);  /* Further scale down for smaller screens */
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.set_page_config(page_title=None, page_icon=None,
                    layout="wide",
                    initial_sidebar_state="expanded")
