@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-data=pd.read_csv(r"E:\kaifa\Dataset to train on\udemy_courses-cleaned.csv")
+data=pd.read_csv("udemy_courses-cleaned.csv")
 df=data.copy()
 
 
