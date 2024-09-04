@@ -11,9 +11,10 @@ st.set_page_config(page_title=None, page_icon=None,
 st.markdown(
     """
     <style>
-    .stApp {
-        transform: scale(0.67);  /* Adjust the scale to 90% */
-        
+    @media only screen and (max-width: 1024px) {
+        .stApp {
+            transform: scale(0.67);  /* Further scale down for smaller screens */
+        }
     }
     </style>
     """,
