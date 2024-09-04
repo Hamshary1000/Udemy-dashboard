@@ -15,7 +15,7 @@ st.markdown(
     @media only screen and (max-width: 1024px) {
         .stApp {
             transform: scale(0.67);  /* Keep it at 67% for smaller screens too */
-            transform-origin: top center;
+            
             width: 150%;
         }
     }
