@@ -10,12 +10,20 @@ st.set_page_config(page_title=None, page_icon=None,
 
 st.markdown(
     """
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+    <style>
+    .stApp {
+        transform: scale(0.67);  /* Set the zoom to 67% */
+        transform-origin: top left;  /* Keep the origin at the top left */
+        width: 150%;  /* Adjust width to compensate for zoom */
+    }
+    body {
+        overflow-x: hidden;  /* Prevent horizontal scrolling */
+    }
+    </style>
     """,
     unsafe_allow_html=True
 )
+
 
 
 about_page = st.Page(
