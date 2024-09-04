@@ -2,7 +2,7 @@ import streamlit as st
 # st.title('Hi there')
 
 st.set_page_config(page_title=None, page_icon=None,
-                   layout="centered",
+                   layout="wide",
                    initial_sidebar_state="expanded")
 
 
