@@ -10,12 +10,10 @@ st.set_page_config(page_title=None, page_icon=None,
 
 st.markdown(
     """
-   
-    
+    <style>
     @media only screen and (max-width: 1024px) {
         .stApp {
-            transform: scale(0.67);  /* Keep it at 67% for smaller screens too */
-            
+            transform: scale(0.85);  /* Further scale down for smaller screens */
             width: 150%;
         }
     }
@@ -23,6 +21,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
