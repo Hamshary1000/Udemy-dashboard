@@ -3,9 +3,9 @@ import streamlit as st
 
 
 
-# st.set_page_config(page_title=None, page_icon=None,
-#                    layout="wide",
-#                    initial_sidebar_state="expanded")
+st.set_page_config(page_title=None, page_icon=None,
+                   layout="wide",
+                   initial_sidebar_state="expanded")
 
 
 
@@ -56,5 +56,37 @@ pg = st.navigation(pages=[about_page, overview,sales,subscribers,content,courses
 
 st.logo("assets/Udemy New.png")
 st.sidebar.markdown("Made with ❤️ by [Hamshary](www.linkedin.com/in/mohamed-elhamshary-0825811a4)")
+
+
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        transform: scale(0.67);  /* Zoom to 67% */
+        transform-origin: top center;  /* Ensure it stays centered */
+        margin: 0 auto;  /* Center the app horizontally */
+        width: 150%;  /* Compensate for the scaling */
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .stApp {
+            transform: scale(0.85);  /* Slightly larger for smaller screens */
+            transform-origin: top center;
+            width: 120%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .stApp {
+            transform: scale(1);  /* Full zoom for very small screens */
+            transform-origin: top center;
+            width: 100%;
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 pg.run()
