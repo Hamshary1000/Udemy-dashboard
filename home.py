@@ -12,18 +12,24 @@ st.markdown(
     """
     <style>
     .stApp {
-        transform: scale(0.67);  /* Zoom out to 67% */
-        transform-origin: center;  /* Keep the origin in the center */
-        margin: 0 auto;  /* Center the app horizontally */
-        width: 150%;  /* Adjust width to fill the page */
+        transform: scale(0.67);  /* Zoom out to 67% for all screen sizes */
+        transform-origin: top center;  /* Keep the origin at the top center */
+        width: 150%;  /* Compensate for the scaling */
+        margin: 0 auto;
     }
-    body {
-        overflow-x: hidden;  /* Prevent horizontal scrolling */
+    
+    @media only screen and (max-width: 1024px) {
+        .stApp {
+            transform: scale(0.67);  /* Keep it at 67% for smaller screens too */
+            transform-origin: top center;
+            width: 150%;
+        }
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 
 
