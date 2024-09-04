@@ -10,13 +10,7 @@ st.set_page_config(page_title=None, page_icon=None,
 
 st.markdown(
     """
-    <style>
-    .stApp {
-        transform: scale(0.67);  /* Zoom out to 67% for all screen sizes */
-        transform-origin: top center;  /* Keep the origin at the top center */
-        width: 150%;  /* Compensate for the scaling */
-        margin: 0 auto;
-    }
+   
     
     @media only screen and (max-width: 1024px) {
         .stApp {
