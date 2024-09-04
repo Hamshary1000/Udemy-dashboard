@@ -13,7 +13,7 @@ st.markdown(
     <style>
     @media only screen and (max-width: 1024px) {
         .stApp {
-            transform: scale(0.85);  /* Further scale down for smaller screens */
+            transform: scale(0.75);  /* Further scale down for smaller screens */
         }
     }
     </style>
