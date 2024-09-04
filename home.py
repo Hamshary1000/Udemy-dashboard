@@ -13,7 +13,7 @@ st.markdown(
     <style>
     .stApp {
         transform: scale(0.67);  /* Set the zoom to 67% */
-        transform-origin: top left;  /* Keep the origin at the top left */
+        transform-origin: center;  /* Keep the origin at the top left */
         width: 150%;  /* Adjust width to compensate for zoom */
     }
     body {
